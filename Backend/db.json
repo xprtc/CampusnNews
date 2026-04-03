@@ -1,49 +1,12 @@
 {
   "posts": [
     {
-      "title": "test",
-      "text": "Everyone talks about ice-cold or boiling hot water, but what about lukewarm? It's somehow... just there. Neither refreshing nor soothing, but reliable. Maybe we should pay more attention to it.",
-      "createdAt": "2025-01-08T11:35:45.961Z",
-      "updatedAt": "2026-03-31T16:07:29.558Z",
-      "userId": "1",
-      "username": "admin",
-      "id": "1"
+      "likes": 7,
+      "id": "6"
     },
     {
-      "title": "IPA",
-      "text": "The IPA (Individual Practical Work) season for computer science and mediamatics specialists is in full swing. Some projects have already been completed, while others are still in the starting blocks, ready to demonstrate to their experts the skills they have developed over the past few years.",
-      "username": "mikeybyte",
-      "userId": "2",
-      "id": "2",
-      "createdAt": "2025-01-09T11:35:45.961Z",
-      "updatedAt": "2025-01-09T11:37:51.711Z"
-    },
-    {
-      "title": "ICT-Campus @ tunBern",
-      "text": "The ICT Campus is representing Swiss Post at the tunBern career fair. The experts from the basic training program have created an exciting program and are looking forward to passing on their enthusiasm for ICT to the next generation.",
-      "createdAt": "2025-01-12T11:35:45.961Z",
-      "updatedAt": "2026-03-31T13:00:08.993Z",
-      "userId": "1",
-      "username": "admin",
-      "id": "5"
-    },
-    {
-      "title": "Why keyboards fear coffee",
-      "text": "Every office keyboard has a nemesis: the half-full cup of coffee balancing on the edge of the desk. One wrong elbow, and it’s a caffeine tsunami. Maybe it's time to invent waterproof keyboards—or just better habits.",
-      "username": "admin",
-      "userId": "1",
-      "id": "6",
-      "createdAt": "2025-01-13T09:14:21.147Z",
-      "updatedAt": "2025-01-13T09:16:58.324Z"
-    },
-    {
-      "title": "Standup Meetings: The silent workout",
-      "text": "Every morning at 9:00 sharp, we stand. Not to honor tradition, but to pretend it's exercise. Agile standups: where you get 15 minutes of leg strain and a daily reminder that no one finished their task yesterday.",
-      "username": "admin",
-      "userId": "1",
-      "id": "7",
-      "createdAt": "2025-01-14T08:45:10.512Z",
-      "updatedAt": "2025-01-14T08:46:39.789Z"
+      "likes": 7,
+      "id": "7"
     },
     {
       "title": "Null is not false",
@@ -52,7 +15,8 @@
       "userId": "1",
       "id": "8",
       "createdAt": "2025-01-15T10:03:52.234Z",
-      "updatedAt": "2025-01-15T10:05:13.921Z"
+      "updatedAt": "2025-01-15T10:05:13.921Z",
+      "likes": 1
     },
     {
       "title": "When the printer goes offline for 'me-time'",
@@ -64,13 +28,8 @@
       "updatedAt": "2025-01-16T14:24:19.832Z"
     },
     {
-      "title": "Tabs vs Spaces: The eternal war",
-      "text": "Entire development teams have fallen apart debating this. Friendships ended. Merge conflicts born. And still, after all these years, no one knows which side is truly right. Only that consistency might save us all.",
-      "username": "admin",
-      "userId": "1",
-      "id": "10",
-      "createdAt": "2025-01-17T13:31:40.512Z",
-      "updatedAt": "2025-01-17T13:33:04.674Z"
+      "likes": 6,
+      "id": "10"
     },
     {
       "title": "Dark mode: Saving eyes or hiding bugs?",
@@ -79,7 +38,8 @@
       "userId": "2",
       "id": "11",
       "createdAt": "2025-01-18T11:42:00Z",
-      "updatedAt": "2025-01-18T11:53:00Z"
+      "updatedAt": "2025-01-18T11:53:00Z",
+      "likes": 1
     },
     {
       "title": "WiFi names that go too far",

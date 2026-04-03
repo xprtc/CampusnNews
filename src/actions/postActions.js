@@ -1,6 +1,7 @@
 "use server"
 import PostsAPI from "@/lib/api/Posts";
 import { redirect } from "next/navigation";
+import { verifySession } from "@/lib/session";
 
 // SCHRITT 1: Das leere Schema definieren
 // Das ist die "Schablone". Alles was hier steht, landet später in der db.json.
@@ -76,4 +77,25 @@ export async function updatePost(state, formData) {
 export async function deletePostAction(id) {
     await PostsAPI.delete(id)
     redirect ("/")
+}
+
+export async function likePostAction(id, currentLikes) {
+  const session = await verifySession();
+  if (!session) return;
+  await PostsAPI.like(id, currentLikes, session.accessToken);
+
+
+  // Hole den kompletten Post, damit beim PUT keine Felder verloren gehen
+  const post = await PostsAPI.read(id);
+  const nextLikes = (currentLikes || post.likes || 0) + 1;
+
+  // Wichtig: Der Server erwartet aus dem Schema das komplette Objekt
+  // daher füllen wir alle Felder aus dem bestehenden Post, aber nur likes aktualisieren.
+  const updatedPost = {
+    ...post,
+    likes: nextLikes,
+    updatedAt: new Date().toISOString(),
+  };
+
+  await PostsAPI.update(updatedPost);
 }

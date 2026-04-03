@@ -15,7 +15,6 @@ export default async function PostDetailsPage({params}){
     return (
         <div className={styles.container}>
             <div className={styles.card}>
-                //untendran werden die daten im return ausgeben
 
                 <h2>{post.title}</h2> 
                 

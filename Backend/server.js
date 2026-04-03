@@ -12,7 +12,7 @@ const router = jsonServer.router(path.join(__dirname, 'db.json'));
 
 const rules = {
     users: 640,      // Only the logged-in user can see his data
-    posts: 644,      // Only logged-in user can read/write
+    posts: 664,      // Only logged-in user can read/write
 };
 
 const rewriter = auth.rewriter(rules);
@@ -29,6 +29,13 @@ app.use(auth);
 
 // Router (db-endpoints)
 app.use(router);
+
+app.use(jsonServer.bodyParser);
+
+app.post('/posts', (req, res, next) => {
+  req.body.createdAt = new Date().toISOString();
+  next();
+});
 
 // Start server
 const PORT = 3001;

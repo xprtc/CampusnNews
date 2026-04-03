@@ -30,7 +30,7 @@ export default function PostFunctions(props) {
                 Edit
             </Link>
 
-            <button onClick={() => handleDelete(id)} className="button-delete">
+            <button onClick={() => handleDelete(id)} className="button">
                 Delete
             </button>
             </>) : (<></>)
