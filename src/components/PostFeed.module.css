@@ -1,0 +1,24 @@
+.feedContainer {
+  display: grid;
+  /* Erstellt 3 gleich breite Spalten */
+  grid-template-columns: repeat(3, 1fr); 
+  /* Abstand zwischen den Blöcken */
+  gap: 20px; 
+  /* Abstand zum Rand und Zentrierung */
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Bonus: Damit es auf dem Handy auch gut aussieht */
+@media (max-width: 900px) {
+  .feedContainer {
+    grid-template-columns: repeat(2, 1fr); /* 2 Spalten auf Tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .feedContainer {
+    grid-template-columns: 1fr; /* 1 Spalte auf Smartphones */
+  }
+}

@@ -1,0 +1,76 @@
+.form-container-styling {
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.form-container-styling div {
+  margin-bottom: 25px;
+}
+
+.form-container-styling label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #5eead4;
+  font-size: 18px;
+}
+
+.form-container-styling input,
+.form-container-styling textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #1c2e4a;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #12233b;
+  color: white;
+}
+
+.form-container-styling input::placeholder,
+.form-container-styling textarea::placeholder {
+  color: #cbd5e1;
+}
+
+.form-container-styling textarea {
+  height: 200px;
+  resize: vertical;
+}
+
+.form-container-styling button {
+  background-color: #5eead4;
+  color: #02192e;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.form-container-styling button:hover {
+  background-color: #4cc9b8;
+}
+
+.form-container-styling button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.message {
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: rgba(211, 47, 47, 0.1);
+  border: 1px solid #d32f2f;
+}
+
+.message p {
+  margin: 0;
+  color: #ff6b6b;
+}

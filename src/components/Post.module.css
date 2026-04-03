@@ -1,0 +1,80 @@
+.card {
+  background-color: #12233b; /* Dunkelblau */
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 400px;
+  border: 1px solid #1c2e4a;
+  position: relative;
+  font-family: sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 30px;
+  color: #5eead4; /* Türkis */
+}
+
+.externalLink {
+  color: white;
+  font-size: 18px;
+  border: 1px solid white;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+.title {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  line-height: 1.2;
+}
+
+.author {
+  color: #5eead4; /* Türkis */
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.text {
+  color: #cbd5e1; /* Hellgrau/Blau */
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.link {
+  color: #ffffff; /* Lila/Violett wie im Bild */
+  text-decoration: none;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.readMore {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ffffff; /* Ein schönes Blau, das auf dunklem Grund gut lesbar ist */
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.readMore:hover {
+    color: #5de7ee;
+    border-bottom: 1px solid #80c0ff;
+    padding-left: 5px; /* Kleiner Animationseffekt nach rechts */
+}
+

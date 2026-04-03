@@ -1,0 +1,523 @@
+{
+  "posts": [
+    {
+      "title": "test",
+      "text": "Everyone talks about ice-cold or boiling hot water, but what about lukewarm? It's somehow... just there. Neither refreshing nor soothing, but reliable. Maybe we should pay more attention to it.",
+      "createdAt": "2025-01-08T11:35:45.961Z",
+      "updatedAt": "2026-03-31T16:07:29.558Z",
+      "userId": "1",
+      "username": "admin",
+      "id": "1"
+    },
+    {
+      "title": "IPA",
+      "text": "The IPA (Individual Practical Work) season for computer science and mediamatics specialists is in full swing. Some projects have already been completed, while others are still in the starting blocks, ready to demonstrate to their experts the skills they have developed over the past few years.",
+      "username": "mikeybyte",
+      "userId": "2",
+      "id": "2",
+      "createdAt": "2025-01-09T11:35:45.961Z",
+      "updatedAt": "2025-01-09T11:37:51.711Z"
+    },
+    {
+      "title": "ICT-Campus @ tunBern",
+      "text": "The ICT Campus is representing Swiss Post at the tunBern career fair. The experts from the basic training program have created an exciting program and are looking forward to passing on their enthusiasm for ICT to the next generation.",
+      "createdAt": "2025-01-12T11:35:45.961Z",
+      "updatedAt": "2026-03-31T13:00:08.993Z",
+      "userId": "1",
+      "username": "admin",
+      "id": "5"
+    },
+    {
+      "title": "Why keyboards fear coffee",
+      "text": "Every office keyboard has a nemesis: the half-full cup of coffee balancing on the edge of the desk. One wrong elbow, and it’s a caffeine tsunami. Maybe it's time to invent waterproof keyboards—or just better habits.",
+      "username": "admin",
+      "userId": "1",
+      "id": "6",
+      "createdAt": "2025-01-13T09:14:21.147Z",
+      "updatedAt": "2025-01-13T09:16:58.324Z"
+    },
+    {
+      "title": "Standup Meetings: The silent workout",
+      "text": "Every morning at 9:00 sharp, we stand. Not to honor tradition, but to pretend it's exercise. Agile standups: where you get 15 minutes of leg strain and a daily reminder that no one finished their task yesterday.",
+      "username": "admin",
+      "userId": "1",
+      "id": "7",
+      "createdAt": "2025-01-14T08:45:10.512Z",
+      "updatedAt": "2025-01-14T08:46:39.789Z"
+    },
+    {
+      "title": "Null is not false",
+      "text": "One of the greatest lies in beginner programming: 'null is like false'. No, it isn't. Null is the absence of value. False is very much a value. Ask any junior developer who’s been burned by this subtle betrayal.",
+      "username": "admin",
+      "userId": "1",
+      "id": "8",
+      "createdAt": "2025-01-15T10:03:52.234Z",
+      "updatedAt": "2025-01-15T10:05:13.921Z"
+    },
+    {
+      "title": "When the printer goes offline for 'me-time'",
+      "text": "Ever sent a document to the printer and heard… nothing? You check the queue, it’s there. You check the printer, it’s powered. But it just sits there, like it’s thinking about life. Maybe it just needed a moment.",
+      "username": "admin",
+      "userId": "1",
+      "id": "9",
+      "createdAt": "2025-01-16T14:22:00.001Z",
+      "updatedAt": "2025-01-16T14:24:19.832Z"
+    },
+    {
+      "title": "Tabs vs Spaces: The eternal war",
+      "text": "Entire development teams have fallen apart debating this. Friendships ended. Merge conflicts born. And still, after all these years, no one knows which side is truly right. Only that consistency might save us all.",
+      "username": "admin",
+      "userId": "1",
+      "id": "10",
+      "createdAt": "2025-01-17T13:31:40.512Z",
+      "updatedAt": "2025-01-17T13:33:04.674Z"
+    },
+    {
+      "title": "Dark mode: Saving eyes or hiding bugs?",
+      "text": "Dark mode: Saving eyes or hiding bugs? — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "mikeybyte",
+      "userId": "2",
+      "id": "11",
+      "createdAt": "2025-01-18T11:42:00Z",
+      "updatedAt": "2025-01-18T11:53:00Z"
+    },
+    {
+      "title": "WiFi names that go too far",
+      "text": "WiFi names that go too far — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "12",
+      "createdAt": "2025-01-19T11:42:00Z",
+      "updatedAt": "2025-01-19T11:46:00Z"
+    },
+    {
+      "title": "Meetings that could've been emails",
+      "text": "Meetings that could've been emails — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "13",
+      "createdAt": "2025-01-20T11:42:00Z",
+      "updatedAt": "2025-01-20T11:44:00Z"
+    },
+    {
+      "title": "The mysterious case of the missing semicolon",
+      "text": "The mysterious case of the missing semicolon — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "14",
+      "createdAt": "2025-01-21T11:42:00Z",
+      "updatedAt": "2025-01-21T11:50:00Z"
+    },
+    {
+      "title": "Code comments from another dimension",
+      "text": "Code comments from another dimension — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "15",
+      "createdAt": "2025-01-22T11:42:00Z",
+      "updatedAt": "2025-01-22T11:49:00Z"
+    },
+    {
+      "title": "When the build works on your machine only",
+      "text": "When the build works on your machine only — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "16",
+      "createdAt": "2025-01-23T11:42:00Z",
+      "updatedAt": "2025-01-23T11:45:00Z"
+    },
+    {
+      "title": "Tabs vs Spaces: Civil War",
+      "text": "Tabs vs Spaces: Civil War — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "17",
+      "createdAt": "2025-01-24T11:42:00Z",
+      "updatedAt": "2025-01-24T11:54:00Z"
+    },
+    {
+      "title": "The joys of rubber duck debugging",
+      "text": "The joys of rubber duck debugging — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "18",
+      "createdAt": "2025-01-25T11:42:00Z",
+      "updatedAt": "2025-01-25T11:50:00Z"
+    },
+    {
+      "title": "Pushing to production on a Friday",
+      "text": "Pushing to production on a Friday — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "19",
+      "createdAt": "2025-01-26T11:42:00Z",
+      "updatedAt": "2025-01-26T11:50:00Z"
+    },
+    {
+      "title": "'It works on my machine' - The Documentary",
+      "text": "'It works on my machine' - The Documentary — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "20",
+      "createdAt": "2025-01-27T11:42:00Z",
+      "updatedAt": "2025-01-27T11:43:00Z"
+    },
+    {
+      "title": "The forgotten password vault password",
+      "text": "The forgotten password vault password — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "21",
+      "createdAt": "2025-01-28T11:42:00Z",
+      "updatedAt": "2025-01-28T11:45:00Z"
+    },
+    {
+      "title": "The great coffee migration",
+      "text": "The great coffee migration — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "22",
+      "createdAt": "2025-01-29T11:42:00Z",
+      "updatedAt": "2025-01-29T11:43:00Z"
+    },
+    {
+      "title": "The existential dread of deprecated dependencies",
+      "text": "The existential dread of deprecated dependencies — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "mikeybyte",
+      "userId": "2",
+      "id": "23",
+      "createdAt": "2025-01-30T11:42:00Z",
+      "updatedAt": "2025-01-30T11:57:00Z"
+    },
+    {
+      "title": "404: Motivation not found",
+      "text": "404: Motivation not found — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "24",
+      "createdAt": "2025-01-31T11:42:00Z",
+      "updatedAt": "2025-01-31T11:52:00Z"
+    },
+    {
+      "title": "Version 1.0.0-final-FINAL-fixed",
+      "text": "Version 1.0.0-final-FINAL-fixed — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "25",
+      "createdAt": "2025-02-01T11:42:00Z",
+      "updatedAt": "2025-02-01T11:48:00Z"
+    },
+    {
+      "title": "Deploying with crossed fingers",
+      "text": "Deploying with crossed fingers — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "26",
+      "createdAt": "2025-02-02T11:42:00Z",
+      "updatedAt": "2025-02-02T11:50:00Z"
+    },
+    {
+      "title": "The silent horror of merge conflicts",
+      "text": "The silent horror of merge conflicts — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "27",
+      "createdAt": "2025-02-03T11:42:00Z",
+      "updatedAt": "2025-02-03T11:50:00Z"
+    },
+    {
+      "title": "Print debugging: Ancient but effective",
+      "text": "Print debugging: Ancient but effective — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "28",
+      "createdAt": "2025-02-04T11:42:00Z",
+      "updatedAt": "2025-02-04T11:44:00Z"
+    },
+    {
+      "title": "Slack messages that start with 'Hey...'",
+      "text": "Slack messages that start with 'Hey...' — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "29",
+      "createdAt": "2025-02-05T11:42:00Z",
+      "updatedAt": "2025-02-05T11:51:00Z"
+    },
+    {
+      "title": "The commit message nobody understands",
+      "text": "The commit message nobody understands — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "30",
+      "createdAt": "2025-02-06T11:42:00Z",
+      "updatedAt": "2025-02-06T11:53:00Z"
+    },
+    {
+      "title": "When the build works on your machine only  ",
+      "text": "When the build works on your machine only — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "31",
+      "createdAt": "2025-02-07T11:42:00Z",
+      "updatedAt": "2025-02-07T11:55:00Z"
+    },
+    {
+      "title": "Version 1.0.0-final-FINAL-fixed  ",
+      "text": "Version 1.0.0-final-FINAL-fixed — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "32",
+      "createdAt": "2025-02-08T11:42:00Z",
+      "updatedAt": "2025-02-08T11:44:00Z"
+    },
+    {
+      "title": "The silent horror of merge conflicts  ",
+      "text": "The silent horror of merge conflicts — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "33",
+      "createdAt": "2025-02-09T11:42:00Z",
+      "updatedAt": "2025-02-09T11:43:00Z"
+    },
+    {
+      "title": "Print debugging: Ancient but effective  ",
+      "text": "Print debugging: Ancient but effective — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "34",
+      "createdAt": "2025-02-10T11:42:00Z",
+      "updatedAt": "2025-02-10T11:57:00Z"
+    },
+    {
+      "title": "WiFi names that go too far  ",
+      "text": "WiFi names that go too far — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "35",
+      "createdAt": "2025-02-11T11:42:00Z",
+      "updatedAt": "2025-02-11T11:52:00Z"
+    },
+    {
+      "title": "Dark mode: Saving eyes or hiding bugs?  ",
+      "text": "Dark mode: Saving eyes or hiding bugs? — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "mikeybyte",
+      "userId": "2",
+      "id": "36",
+      "createdAt": "2025-02-12T11:42:00Z",
+      "updatedAt": "2025-02-12T11:47:00Z"
+    },
+    {
+      "title": "The silent horror of merge conflicts  ",
+      "text": "The silent horror of merge conflicts — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "37",
+      "createdAt": "2025-02-13T11:42:00Z",
+      "updatedAt": "2025-02-13T11:50:00Z"
+    },
+    {
+      "title": "'It works on my machine' - The Documentary  ",
+      "text": "'It works on my machine' - The Documentary — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "mikeybyte",
+      "userId": "2",
+      "id": "38",
+      "createdAt": "2025-02-14T11:42:00Z",
+      "updatedAt": "2025-02-14T11:51:00Z"
+    },
+    {
+      "title": "Print debugging: Ancient but effective    ",
+      "text": "Print debugging: Ancient but effective — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "39",
+      "createdAt": "2025-02-15T11:42:00Z",
+      "updatedAt": "2025-02-15T11:57:00Z"
+    },
+    {
+      "title": "'It works on my machine' - The Documentary    ",
+      "text": "'It works on my machine' - The Documentary — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "40",
+      "createdAt": "2025-02-16T11:42:00Z",
+      "updatedAt": "2025-02-16T11:46:00Z"
+    },
+    {
+      "title": "Meetings that could've been emails  ",
+      "text": "Meetings that could've been emails — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "41",
+      "createdAt": "2025-02-17T11:42:00Z",
+      "updatedAt": "2025-02-17T11:43:00Z"
+    },
+    {
+      "title": "Pushing to production on a Friday  ",
+      "text": "Pushing to production on a Friday — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "42",
+      "createdAt": "2025-02-18T11:42:00Z",
+      "updatedAt": "2025-02-18T11:54:00Z"
+    },
+    {
+      "title": "The existential dread of deprecated dependencies  ",
+      "text": "The existential dread of deprecated dependencies — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "43",
+      "createdAt": "2025-02-19T11:42:00Z",
+      "updatedAt": "2025-02-19T11:54:00Z"
+    },
+    {
+      "title": "Dark mode: Saving eyes or hiding bugs?    ",
+      "text": "Dark mode: Saving eyes or hiding bugs? — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "mikeybyte",
+      "userId": "2",
+      "id": "44",
+      "createdAt": "2025-02-20T11:42:00Z",
+      "updatedAt": "2025-02-20T11:55:00Z"
+    },
+    {
+      "title": "Code comments from another dimension  ",
+      "text": "Code comments from another dimension — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "45",
+      "createdAt": "2025-02-21T11:42:00Z",
+      "updatedAt": "2025-02-21T11:55:00Z"
+    },
+    {
+      "title": "The joys of rubber duck debugging  ",
+      "text": "The joys of rubber duck debugging — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "mikeybyte",
+      "userId": "2",
+      "id": "46",
+      "createdAt": "2025-02-22T11:42:00Z",
+      "updatedAt": "2025-02-22T11:54:00Z"
+    },
+    {
+      "title": "The great coffee migration  ",
+      "text": "The great coffee migration — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "mikeybyte",
+      "userId": "2",
+      "id": "47",
+      "createdAt": "2025-02-23T11:42:00Z",
+      "updatedAt": "2025-02-23T11:53:00Z"
+    },
+    {
+      "title": "The joys of rubber duck debugging  ",
+      "text": "The joys of rubber duck debugging — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "48",
+      "createdAt": "2025-02-24T11:42:00Z",
+      "updatedAt": "2025-02-24T11:43:00Z"
+    },
+    {
+      "title": "Pushing to production on a Friday  ",
+      "text": "Pushing to production on a Friday — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.",
+      "username": "admin",
+      "userId": "1",
+      "id": "49",
+      "createdAt": "2025-02-25T11:42:00Z",
+      "updatedAt": "2025-02-25T11:52:00Z"
+    },
+    {
+      "title": "The mysterious case of the missing semicolon  ;",
+      "text": "The mysterious case of the missing semicolon — A tale as old as time in the world of tech. Somewhere between irony and necessity, this is our daily reality.asdfasdfasdf",
+      "userId": "1",
+      "username": "admin",
+      "updatedAt": "2025-12-04T14:54:14.819Z",
+      "id": "50"
+    },
+    {
+      "title": "",
+      "text": "michlig",
+      "createdAt": "2026-03-31T12:24:19.517Z",
+      "updatedAt": "2026-03-31T12:24:19.517Z",
+      "userId": "1",
+      "username": "admin",
+      "id": "vKgcNVZ"
+    },
+    {
+      "title": "",
+      "text": "ih bim kaki",
+      "createdAt": "2026-03-31T12:26:03.174Z",
+      "updatedAt": "2026-03-31T12:26:03.174Z",
+      "userId": "1",
+      "username": "admin",
+      "id": "YpqUgS_"
+    },
+    {
+      "title": "kevin",
+      "text": "goat\r\n",
+      "createdAt": "2026-03-31T12:28:19.311Z",
+      "updatedAt": "2026-03-31T12:28:19.311Z",
+      "userId": "1",
+      "username": "admin",
+      "id": "2G81QGE"
+    },
+    {
+      "title": "Mo testet webseite",
+      "text": "ich teste rayan seine webseite",
+      "createdAt": "2026-03-31T13:55:20.394Z",
+      "updatedAt": "2026-03-31T13:55:20.394Z",
+      "userId": "1",
+      "username": "admin",
+      "id": "lvEhiSt"
+    },
+    {
+      "title": "testtetst",
+      "text": "----------",
+      "createdAt": "2026-03-31T16:07:46.970Z",
+      "updatedAt": "2026-03-31T16:07:46.970Z",
+      "userId": "1",
+      "username": "admin",
+      "id": "-wAsSV-"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "username": "admin",
+      "userId": "1",
+      "postId": 1,
+      "text": "Toller Beitrag! Danke, dass ihr alles auf englisch schreibt. So kann ich mein Englisch verbessern.",
+      "createdAt": "2025-02-11T09:51:48.975Z",
+      "updatedAt": "2025-02-11T14:56:42.167Z"
+    },
+    {
+      "id": "2",
+      "username": "admin",
+      "userId": "1",
+      "postId": 1,
+      "text": "Hi there everyone! I want to greet my fellow students, teachers and my mom. I hope you all have a great day!",
+      "createdAt": "2025-02-14T16:01:15.738Z",
+      "updatedAt": "2025-02-14T16:01:15.738Z"
+    },
+    {
+      "id": "3",
+      "username": "admin",
+      "userId": "1",
+      "postId": 2,
+      "text": "Test. Funktioniert die Kommentarfunktion?",
+      "createdAt": "2022-02-14T16:11:36.578Z",
+      "updatedAt": "2022-02-14T16:11:36.578Z"
+    }
+  ],
+  "users": [
+    {
+      "email": "admin@admin.ch",
+      "password": "$2a$10$YkFbz7nkfUtM64tKLMfPme2IOwuBEVCWXcGv75NP6BEdeV94eQ/TG",
+      "username": "admin",
+      "id": 1
+    },
+    {
+      "email": "mike@campus.ch",
+      "password": "$2a$10$YkFbz7nkfUtM64tKLMfPme2IOwuBEVCWXcGv75NP6BEdeV94eQ/TG",
+      "name": "mikeybyte",
+      "id": 2
+    }
+  ]
+}

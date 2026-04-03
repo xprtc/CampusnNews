@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 200vh;
+  padding-top: 6rem;
+
+  color: white;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: #ffffff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 450px; /* Etwas breiter wie im Screenshot */
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  text-align: left;
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #00d1b2; /* Das Türkis aus dem Screenshot für die Labels */
+}
+
+.inputField {
+  padding: 1rem;
+  background-color: #0d2136; /* Dunklerer Input-Hintergrund */
+  border: 1px solid #1a3652;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: #00d1b2;
+}
+
+.submitButton {
+  margin-top: 1rem;
+  background-color: #63f3d2; /* Die helle Türkis-Farbe des Buttons */
+  color: #001529; /* Dunkler Text auf hellem Button */
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.1s, background-color 0.2s;
+}
+
+.submitButton:hover {
+  background-color: #4ed9b9;
+  transform: translateY(-2px);
+}

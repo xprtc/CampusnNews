@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #02192e; 
+  height: 80px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.logoContainer {
+  flex: 1; /* Nimmt links Platz ein */
+  display: flex;
+  align-items: center;
+}
+
+.headerTitle {
+  flex: 2; 
+  text-align: center; 
+  color: white;
+  margin: 0;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+header :global(nav) {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
