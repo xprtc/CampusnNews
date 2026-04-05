@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 70vh; /* Zentriert es vertikal im Sichtfeld */
+  min-height: 70vh;
 }
 
 .title {
@@ -12,14 +12,14 @@
   margin: 0;
 }
 
-.gridPost{
+.gridPost {
   margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .titelposts {
   text-align: left;
-  color: #0f172a;
+  color: #f8fafc;
 }

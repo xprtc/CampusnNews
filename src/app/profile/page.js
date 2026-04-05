@@ -9,14 +9,14 @@ export default async function ProfilePage() {
   }
 
   return (
-    <div style={{ padding: "2rem", maxWidth: 480, color: "#0f172a" }}>
-      <h1 style={{ marginTop: 0 }}>Profile</h1>
+    <div style={{ padding: "2rem", maxWidth: 480, color: "#e2e8f0" }}>
+      <h1 style={{ marginTop: 0, color: "#fff" }}>Profile</h1>
       <p>
         Angemeldet als{" "}
         <strong>{session.user.username ?? session.user.email ?? "User"}</strong>
       </p>
       <p>
-        <Link href="/" style={{ color: "#0369a1" }}>
+        <Link href="/" style={{ color: "#5eead4" }}>
           Zur Startseite
         </Link>
       </p>

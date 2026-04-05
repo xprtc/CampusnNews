@@ -16,33 +16,33 @@
 .label {
   font-size: 1rem;
   font-weight: bold;
-  color: #0d9488;
+  color: #5eead4;
 }
 
 .inputField {
   padding: 1rem;
-  background-color: #ffffff;
-  border: 1px solid #cbd5e1;
+  background-color: #0d2136;
+  border: 1px solid #1a3652;
   border-radius: 6px;
-  color: #0f172a;
+  color: #f8fafc;
   font-size: 1rem;
 }
 
 .error {
-  color: #dc2626;
+  color: #fca5a5;
   font-size: 0.85rem;
   margin-top: 0.3rem;
 }
 
 .message {
-  color: #0d9488;
+  color: #5eead4;
   text-align: center;
 }
 
 .submitButton {
   margin-top: 0.5rem;
-  background-color: #0d9488;
-  color: #ffffff;
+  background-color: #5eead4;
+  color: #02192e;
   padding: 1rem;
   border: none;
   border-radius: 8px;
@@ -53,7 +53,7 @@
 }
 
 .submitButton:hover:not(:disabled) {
-  background-color: #0f766e;
+  background-color: #4cc9b8;
   transform: translateY(-2px);
 }
 

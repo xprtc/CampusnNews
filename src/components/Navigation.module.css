@@ -5,20 +5,21 @@
 }
 
 .navLink {
-  color: #334155;
+  color: #f1f5f9;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
-  transition: color 0.2s;
+  transition: color 0.2s, opacity 0.2s;
 }
 
 .navLink:hover {
-  color: #0d9488;
+  color: #5eead4;
+  opacity: 1;
 }
 
 .createButton {
-  background-color: #0d9488 !important;
-  color: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #02192e !important;
   padding: 8px 16px !important;
   margin: 0 !important;
   border-radius: 6px !important;
@@ -28,14 +29,14 @@
 }
 
 .createButton:hover {
-  background-color: #0f766e !important;
+  background-color: #e2e8f0 !important;
   opacity: 1 !important;
   transform: translateY(-1px);
 }
 
 .logoutButton {
   background-color: transparent;
-  color: #334155;
+  color: #f1f5f9;
   padding: 0;
   margin: 0;
   border: none;
@@ -47,6 +48,6 @@
 }
 
 .logoutButton:hover {
-  color: #0d9488;
+  color: #5eead4;
   opacity: 1;
 }
