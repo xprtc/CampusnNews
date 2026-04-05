@@ -35,7 +35,8 @@ export async function createSession(accessToken) {
     // Store the session  accessToken in a "secure" cookie
     cookieStore.set("session", accessToken, {
         httpOnly: true,
-        secure: true,
+        // Nur über HTTPS (Production); auf http://localhost sonst keine Session
+        secure: process.env.NODE_ENV === "production",
         expires: new Date(Date.now() + 60 * 60 * 1000),
         sameSite: "strict",
         path: "/",

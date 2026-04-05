@@ -15,49 +15,59 @@ const schema = {
 };
 
 export async function updatePost(state, formData) {
-  // SCHRITT 2: Eine Kopie der Schablone erstellen
+  const session = await verifySession();
+  if (!session) {
+    return {
+      id: state?.id ?? null,
+      data: Object.fromEntries(formData),
+      message: "Bitte einloggen, um den Post zu speichern.",
+    };
+  }
+
   let fields = { ...schema };
 
-  // SCHRITT 3: Die Daten aus dem Formular in die Schablone füllen
-  // Wir gehen alle Eingabefelder durch. Wenn der Name (z.B. "title") im Schema ist,
-  // speichern wir den Wert ab.
   for (const [key, value] of formData.entries()) {
     if (key in schema) {
       fields[key] = value;
     }
   }
 
-  // SCHRITT 4: Die ID bestimmen
-  // Wenn wir einen Post bearbeiten, kommt die ID aus dem 'state'.
-  // Wenn wir einen neuen Post erstellen, ist sie null.
   const id = state.id || null;
+  const token = session.accessToken;
+  const now = new Date().toISOString();
 
   try {
-    // SCHRITT 5: Automatische Daten hinzufügen
-    fields.userId = "1"; // Fake-ID (später vom Login)
-    fields.username = "admin"; // Fake-Name
-    fields.updatedAt = new Date().toISOString(); // Aktueller Zeitstempel
+    fields.updatedAt = now;
 
     if (id) {
-      // --- FALL A: POST BEARBEITEN (Update) ---
-      // 1. Wir holen den alten Post, um das ursprüngliche Erstellungsdatum (createdAt) zu bekommen
-      const existingPost = await PostsAPI.read(id);
-      fields.createdAt = existingPost.createdAt;
-      
-      // 2. Wir fügen die ID zum Objekt hinzu, damit die API weiß, welcher Post gemeint ist
-      fields.id = id;
-      
-      // 3. API-Aufruf zum Aktualisieren
-      await PostsAPI.update(fields);
+      const existingPost = await PostsAPI.read(id, token);
+      if (String(existingPost.userId) !== String(session.user.id)) {
+        return {
+          id,
+          data: { title: fields.title, text: fields.text },
+          message: "Du darfst diesen Post nicht bearbeiten.",
+        };
+      }
+      const merged = {
+        ...existingPost,
+        title: fields.title,
+        text: fields.text,
+        updatedAt: now,
+      };
+      await PostsAPI.update(merged, token);
     } else {
-      // --- FALL B: NEUER POST (Create) ---
-      // 1. Neues Erstellungsdatum setzen
-      fields.createdAt = new Date().toISOString();
-      
-      // 2. API-Aufruf zum Erstellen
-      await PostsAPI.create(fields);
+      fields.createdAt = now;
+      fields.userId = String(session.user.id);
+      fields.username = session.user.username ?? "user";
+      await PostsAPI.create(
+        {
+          ...fields,
+          likedBy: [],
+          likes: 0,
+        },
+        token
+      );
     }
-
   } catch (error) {
     // SCHRITT 6: Fehler abfangen
     // Falls etwas schiefgeht, schicken wir die Daten zurück an das Formular,
@@ -75,27 +85,23 @@ export async function updatePost(state, formData) {
 }
 
 export async function deletePostAction(id) {
-    await PostsAPI.delete(id)
-    redirect ("/")
+  const session = await verifySession();
+  if (!session) {
+    return;
+  }
+  await PostsAPI.delete(id, session.accessToken);
+  redirect("/");
 }
 
-export async function likePostAction(id, currentLikes) {
+export async function toggleLikeAction(postId) {
   const session = await verifySession();
-  if (!session) return;
-  await PostsAPI.like(id, currentLikes, session.accessToken);
-
-
-  // Hole den kompletten Post, damit beim PUT keine Felder verloren gehen
-  const post = await PostsAPI.read(id);
-  const nextLikes = (currentLikes || post.likes || 0) + 1;
-
-  // Wichtig: Der Server erwartet aus dem Schema das komplette Objekt
-  // daher füllen wir alle Felder aus dem bestehenden Post, aber nur likes aktualisieren.
-  const updatedPost = {
-    ...post,
-    likes: nextLikes,
-    updatedAt: new Date().toISOString(),
-  };
-
-  await PostsAPI.update(updatedPost);
+  if (!session) {
+    return { ok: false };
+  }
+  const { liked, count } = await PostsAPI.toggleLike(
+    postId,
+    session.accessToken,
+    session.user.id
+  );
+  return { ok: true, liked, count };
 }

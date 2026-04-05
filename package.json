@@ -9,6 +9,7 @@
     "lint": "next lint",
     "lint-watch": "nodemon --watch . --exec next lint",
     "server": "node backend/server.js",
+    "preview": "concurrently --kill-others \"npm run server\" \"next dev\"",
     "cy:open": "cypress open"
   },
   "dependencies": {

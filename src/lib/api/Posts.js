@@ -6,26 +6,43 @@ const PostsAPI = {
     return getJSON(`${URL}?_sort=-createdAt`)
   },
 
-  read(id) {
-    return getJSON(`${URL}/${id}`)
+  read(id, accessToken = null) {
+    return getJSON(`${URL}/${id}`, accessToken);
   },
 
-  create(post) {
-    return postJSON(URL, post)
+  create(post, accessToken = null) {
+    return postJSON(URL, post, accessToken);
   },
 
-  update(post) {
-    return putJSON(`${URL}/${post.id}`, post)
+  update(post, accessToken = null) {
+    return putJSON(`${URL}/${post.id}`, post, accessToken);
   },
 
-  delete(id) {
-    return deleteJSON(`${URL}/${id}`)
+  delete(id, accessToken = null) {
+    return deleteJSON(`${URL}/${id}`, accessToken);
   },
 
-async like(id, currentLikes, accessToken) {
-  const post = await getJSON(`${URL}/${id}`, accessToken);
-  return putJSON(`${URL}/${id}`, { ...post, likes: (currentLikes || 0) + 1 }, accessToken);
-}
+  async toggleLike(id, accessToken, userId) {
+    const post = await getJSON(`${URL}/${id}`, accessToken);
+    const uid = String(userId);
+    let likedBy = Array.isArray(post.likedBy)
+      ? post.likedBy.map(String)
+      : [];
+    const idx = likedBy.indexOf(uid);
+    if (idx >= 0) {
+      likedBy = likedBy.filter((x) => x !== uid);
+    } else {
+      likedBy = [...likedBy, uid];
+    }
+    const next = {
+      ...post,
+      likedBy,
+      likes: likedBy.length,
+      updatedAt: new Date().toISOString(),
+    };
+    await putJSON(`${URL}/${id}`, next, accessToken);
+    return { liked: idx < 0, count: likedBy.length };
+  }
 }
 
 export default PostsAPI

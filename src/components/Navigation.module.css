@@ -1,50 +1,52 @@
 .nav {
   display: flex;
-  gap: 20px; 
+  gap: 20px;
+  align-items: center;
 }
 
 .navLink {
-  color: rgb(255, 255, 255);
+  color: #334155;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
-  transition: opacity 0.2s;
+  transition: color 0.2s;
 }
 
 .navLink:hover {
-  opacity: 0.7; /* Kleiner Effekt beim Drüberfahren */
+  color: #0d9488;
 }
 
 .createButton {
-  background-color: transparent; 
-  color: rgb(255, 255, 255);
-  padding: 0; 
-  margin: 0;
-  border-radius: 0;
-  font-size: 1.1rem;
-  font-weight: 500;
-  transition: opacity 0.2s;
+  background-color: #0d9488 !important;
+  color: #ffffff !important;
+  padding: 8px 16px !important;
+  margin: 0 !important;
+  border-radius: 6px !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  transition: background-color 0.2s, transform 0.15s;
 }
 
 .createButton:hover {
-  background-color: transparent;
-  opacity: 0.7;    
+  background-color: #0f766e !important;
+  opacity: 1 !important;
+  transform: translateY(-1px);
 }
 
 .logoutButton {
-  background-color: transparent; 
-  color: rgb(255, 255, 255);
-  padding: 0; 
+  background-color: transparent;
+  color: #334155;
+  padding: 0;
   margin: 0;
   border: none;
   border-radius: 0;
   font-size: 1.1rem;
   font-weight: 500;
   cursor: pointer;
-  transition: opacity 0.2s;
+  transition: color 0.2s;
 }
 
 .logoutButton:hover {
-  opacity: 0.7;
+  color: #0d9488;
+  opacity: 1;
 }
-

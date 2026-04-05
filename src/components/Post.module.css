@@ -1,9 +1,74 @@
+.doubleTapZone {
+  position: relative;
+  touch-action: manipulation;
+  cursor: default;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.burstWrap {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.burstHeart {
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.35));
+  animation: igHeartPop 0.85s ease-out forwards;
+}
+
+@keyframes igHeartPop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  15% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  40% {
+    transform: scale(0.95);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+.mediaBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 140px;
+  background: linear-gradient(180deg, #f1f5f9 0%, #e2e8f0 100%);
+  border-radius: 8px;
+  margin: -4px -4px 12px -4px;
+}
+
+.image {
+  display: block;
+  object-fit: contain;
+}
+
+.titelKlein {
+  color: #64748b;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0 0 8px 0;
+}
+
 .card {
-  background-color: #12233b; /* Dunkelblau */
+  background-color: #ffffff;
   padding: 25px;
   border-radius: 8px;
   max-width: 400px;
-  border: 1px solid #1c2e4a;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
   position: relative;
   font-family: sans-serif;
 }
@@ -17,19 +82,19 @@
 
 .icon {
   font-size: 30px;
-  color: #5eead4; /* Türkis */
+  color: #0d9488;
 }
 
 .externalLink {
-  color: white;
+  color: #0f172a;
   font-size: 18px;
-  border: 1px solid white;
+  border: 1px solid #cbd5e1;
   padding: 2px 5px;
   border-radius: 4px;
 }
 
 .title {
-  color: white;
+  color: #0f172a;
   font-size: 24px;
   font-weight: bold;
   margin: 0 0 10px 0;
@@ -37,21 +102,21 @@
 }
 
 .author {
-  color: #5eead4; /* Türkis */
+  color: #0d9488;
   font-size: 14px;
   margin-bottom: 15px;
   font-weight: 500;
 }
 
 .text {
-  color: #cbd5e1; /* Hellgrau/Blau */
+  color: #475569;
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
 
 .link {
-  color: #ffffff; /* Lila/Violett wie im Bild */
+  color: #0369a1;
   text-decoration: none;
   font-style: italic;
   font-size: 14px;
@@ -61,35 +126,87 @@
   text-decoration: underline;
 }
 
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e2e8f0;
+  gap: 12px;
+}
+
 .readMore {
-    display: inline-block;
-    margin-top: 15px;
-    color: #ffffff; /* Ein schönes Blau, das auf dunklem Grund gut lesbar ist */
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: bold;
-    border-bottom: 1px solid transparent;
-    transition: all 0.2s ease;
+  display: inline-block;
+  color: #0369a1;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
 }
 
 .readMore:hover {
-    color: #5de7ee;
-    border-bottom: 1px solid #80c0ff;
-    padding-left: 5px; /* Kleiner Animationseffekt nach rechts */
+  color: #0d9488;
+  border-bottom: 1px solid #0d9488;
+  padding-left: 5px;
+}
+
+.bodyText {
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 4px 0;
 }
 
 .likeButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   background: none;
   border: none;
   cursor: pointer;
   font-size: 1rem;
-  margin-top: 8px;
   color: #e05c5c;
+  padding: 4px 0;
+  border-radius: 6px;
+}
+
+.likeButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.likeButton:focus-visible {
+  outline: 2px solid #0d9488;
+  outline-offset: 2px;
+}
+
+.heartSvg {
+  flex-shrink: 0;
+  display: block;
+}
+
+.heartStroke {
+  fill: none;
+  stroke: #e05c5c;
+  stroke-width: 1.65;
+  stroke-linejoin: round;
+}
+
+.heartFilled {
+  fill: #e05c5c;
+  stroke: none;
+}
+
+.likeCount {
+  font-weight: 600;
+  color: #475569;
+  min-width: 1ch;
 }
 
 .date {
   font-size: 0.8rem;
-  color: #aaa;
+  color: #64748b;
   margin: 4px 0;
 }
-

@@ -4,14 +4,12 @@
   align-items: center;
   justify-content: flex-start;
   padding: 40px 40px;
-
-  color: white;
+  color: #0f172a;
 }
 
 .title {
   font-size: 3rem;
-  color: #ffffff;
+  color: #0f172a;
   margin-bottom: 30px;
   text-align: center;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }

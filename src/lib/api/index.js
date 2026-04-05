@@ -1,4 +1,5 @@
-const BASE_URL = "http://localhost:3001";
+const BASE_URL =
+  process.env.API_BASE_URL?.replace(/\/$/, "") || "http://127.0.0.1:3001";
  
 // central error handling
 async function handleResponse(response) {
@@ -17,6 +18,7 @@ export async function getJSON(url, accessToken = null) {
         headers: {
             "content-type": "application/json",
         },
+        cache: "no-store",
     };
  
     if (accessToken) {

@@ -1,13 +1,18 @@
 import PostForm from "@/components/PostForm";
 import { updatePost } from "@/actions/postActions";
 import PostsAPI from "@/lib/api/Posts";
+import { verifySession } from "@/lib/session";
+import { redirect } from "next/navigation";
 
 export default async function EditPostPage({ params }) {
-  // 1. ID aus der URL holen
+  const session = await verifySession();
+  if (!session) {
+    redirect("/login");
+  }
+
   const { id } = await params;
-  
-  // 2. Den bestehenden Post aus der Datenbank laden
-  const post = await PostsAPI.read(id);
+
+  const post = await PostsAPI.read(id, session.accessToken);
 
   return (
     <main>

@@ -3,6 +3,9 @@
   border-radius: 12px;
   max-width: 600px;
   width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
 }
 
 .form-container-styling div {
@@ -13,7 +16,7 @@
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
-  color: #5eead4;
+  color: #0d9488;
   font-size: 18px;
 }
 
@@ -21,17 +24,17 @@
 .form-container-styling textarea {
   width: 100%;
   padding: 15px;
-  border: 1px solid #1c2e4a;
+  border: 1px solid #cbd5e1;
   border-radius: 8px;
   font-size: 16px;
   box-sizing: border-box;
-  background-color: #12233b;
-  color: white;
+  background-color: #ffffff;
+  color: #0f172a;
 }
 
 .form-container-styling input::placeholder,
 .form-container-styling textarea::placeholder {
-  color: #cbd5e1;
+  color: #94a3b8;
 }
 
 .form-container-styling textarea {
@@ -40,8 +43,8 @@
 }
 
 .form-container-styling button {
-  background-color: #5eead4;
-  color: #02192e;
+  background-color: #0d9488;
+  color: #ffffff;
   padding: 15px 30px;
   border: none;
   border-radius: 8px;
@@ -53,11 +56,11 @@
 }
 
 .form-container-styling button:hover {
-  background-color: #4cc9b8;
+  background-color: #0f766e;
 }
 
 .form-container-styling button:disabled {
-  background-color: #ccc;
+  background-color: #cbd5e1;
   cursor: not-allowed;
 }
 
@@ -66,11 +69,11 @@
   padding: 15px;
   border-radius: 8px;
   text-align: center;
-  background-color: rgba(211, 47, 47, 0.1);
-  border: 1px solid #d32f2f;
+  background-color: rgba(220, 38, 38, 0.08);
+  border: 1px solid #f87171;
 }
 
 .message p {
   margin: 0;
-  color: #ff6b6b;
+  color: #b91c1c;
 }

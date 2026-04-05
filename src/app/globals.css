@@ -1,61 +1,59 @@
 body {
-  background-color: #051b3a; 
-  color: white;              
+  background-color: #f8fafc;
+  color: #0f172a;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;  
+  font-family: sans-serif;
 }
-
 
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 80rem; 
+  min-height: 80rem;
 }
 
-/* In der Navbar.module.css */
 .navLink {
-    color: white;
-    text-decoration: none;
-    padding: 8px 16px;
-    transition: all 0.3s ease;
-    font-weight: 500;
+  color: #334155;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+  font-weight: 500;
 }
 
 .createButton {
-    background-color: #ffffff;
-    color: #000b1d;
-    border-radius: 4px;
-    margin-left: 10px;
+  background-color: #0d9488;
+  color: #ffffff;
+  border-radius: 4px;
+  margin-left: 10px;
 }
 
 .createButton:hover {
-    background-color: #e0e0e0;
-    transform: translateY(-2px);
+  background-color: #0f766e;
+  transform: translateY(-2px);
 }
 
 .button {
-    background-color: #ffffff;
-    color: #000b1d;
-    border: none;
-    border-radius: 4px;
-    padding: 8px 16px;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    display: inline-block;
-    margin: 5px;
+  background-color: #0d9488;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
 }
 
 .button:hover {
-    background-color: #e0e0e0;
-    transform: translateY(-2px);
+  background-color: #0f766e;
+  transform: translateY(-2px);
 }
 
 .post-functions {
-    margin-top: -20px;
+  margin-top: -20px;
 }

@@ -3,21 +3,22 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 40px;
-  background-color: #02192e; 
+  background-color: #ffffff;
   height: 80px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .logoContainer {
-  flex: 1; /* Nimmt links Platz ein */
+  flex: 1;
   display: flex;
   align-items: center;
 }
 
 .headerTitle {
-  flex: 2; 
-  text-align: center; 
-  color: white;
+  flex: 2;
+  text-align: center;
+  color: #0f172a;
   margin: 0;
   font-size: 1.8rem;
   letter-spacing: 1px;

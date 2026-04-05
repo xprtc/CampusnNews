@@ -3,7 +3,7 @@
 import { z } from "zod"
 import UsersAPI from "@/lib/api/Users" 
 import { redirect } from "next/navigation"
-import { createSession, deleteSession } from "@/lib/session";
+import { createSession, deleteSession, verifySession } from "@/lib/session";
 
 // Schema for validating the data of the fields from the form.
 const schema = z.object({
@@ -72,7 +72,7 @@ export async function getUsernameAction() {
   const { id } = session.user
   const {accessToken} = session
  
-  const user = await UsersApi.read(id, accessToken)
+  const user = await UsersAPI.read(id, accessToken);
  
   return user?.username
 }
@@ -86,7 +86,7 @@ export async function getUsernamePerIdAction(id) {
        return null;
     }
  
-    const user = await UsersApi.read(id,session.accessToken)
+    const user = await UsersAPI.read(id, session.accessToken);
  
     return user?.username
 }

@@ -37,8 +37,9 @@ app.post('/posts', (req, res, next) => {
   next();
 });
 
-// Start server
+// Start server (0.0.0.0: zuverlässiger für IPv4 / Zugriff vom gleichen Rechner)
 const PORT = 3001;
-app.listen(PORT, () => {
-    console.log(`JSON server running under http://localhost:${PORT}`);
+const HOST = '0.0.0.0';
+app.listen(PORT, HOST, () => {
+    console.log(`JSON server running under http://127.0.0.1:${PORT}`);
 });
