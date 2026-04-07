@@ -1,11 +1,13 @@
 {
   "name": "campus_news",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "concurrently --kill-others \"npm run server\" \"npm run lint-watch\" \"next dev\"",
-    "build": "concurrently --kill-others \"npm run server\" \"npm run lint-watch\" \"next build\"",
-    "start": "concurrently --kill-others \"npm run server\" \"npm run lint-watch\" \"next start\"",
+    "build": "next build",
+    "build:legacy": "concurrently --kill-others \"npm run server\" \"npm run lint-watch\" \"next build\"",
+    "start": "next start",
+    "start:full": "concurrently --kill-others \"npm run server\" \"npm run lint-watch\" \"next start\"",
     "lint": "next lint",
     "lint-watch": "nodemon --watch . --exec next lint",
     "server": "node backend/server.js",
